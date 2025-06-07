@@ -1,7 +1,5 @@
-#include <stdint.h>
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+
 
 int main(){
 
@@ -10,8 +8,8 @@ double num1;
 double num2;
 double result;
 
-printf("\n what operator  + - * /" );
-scanf("%lf", &operator);
+printf("\nwhat operator  + - * /" );
+scanf("%c", &operator);
 
 printf("\n enter num 1" );
 scanf("%lf", &num1);
@@ -24,24 +22,23 @@ scanf("%lf", &num2);
 
     switch(operator){
     case '+':
-    result = num1 + num2;
-    printf("\n result", result);
-    break;
+       result = num1 + num2;
+       printf("\nresult", result);
+       break;
     case '-':
-    result = num1 - num2;
-    printf("\n result", result);  
-    break;
+       result = num1 - num2;
+       printf("\nresult", result);  
+       break;
     case '*':
-    result = num1 * num2;
-    printf("\n result", result);  
-    break;
+       result = num1 * num2;
+       printf("\nresult", result);  
+       break;
     case '/':
-    result = num1 / num2;
-    printf("\n result", result);
-    break;    
+       result = num1 / num2;
+       printf("\nresult", result);
+       break;    
     default:
-      printf("%c is not valid", operator);
-
+      printf("\nis not valid", operator);
     }
    return 0;
 }
